@@ -14,6 +14,11 @@
   </head>
 
   <body>
+    <form action="post">
+      <input type="text" id="task"  placeholder="New Task">
+      <input type="text" id="hour"  placeholder="Hour">
+      <input type="submit">
+    </form>
     <div id="container"></div>
 
     <script type="text/template" id="day-template">
@@ -22,8 +27,7 @@
     </script>
 
     <script type="text/template" id="hour-template">
-      <li>Hour: <%= hour %> | Task: <%= task %> | <%= completed %></li>
+      Hour: <%= hour %> | Task: <%= task %>
     </script>
-
   </body>
 </html>
